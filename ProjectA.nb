@@ -1,0 +1,192 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      6973,        183]
+NotebookOptionsPosition[      6344,        157]
+NotebookOutlinePosition[      6698,        173]
+CellTagsIndexPosition[      6655,        170]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<CUDALink`\>\"", "]"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"listSize", " ", "=", " ", "10"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"arry1", "=", " ", 
+  RowBox[{"ConstantArray", "[", 
+   RowBox[{"1", ",", " ", 
+    RowBox[{"{", "listSize", "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"arry2", "=", " ", 
+  RowBox[{"ConstantArray", "[", 
+   RowBox[{"2", ",", " ", 
+    RowBox[{"{", "listSize", "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"a", "=", "2"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b", "=", "3"}], ";"}]}], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", 
+   ",", "1", ",", "1"}], "}"}]], "Output",
+ CellChangeTimes->{3.53772629436353*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "2", ",", "2", ",", "2", ",", "2", ",", "2", ",", "2", ",", "2", ",", "2", 
+   ",", "2", ",", "2"}], "}"}]], "Output",
+ CellChangeTimes->{3.537726294365966*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+   "sqrtRootSumKernelCode", " ", "=", 
+    "\"\<__global__ void corrcoef_kernel(float *gC, float *gA, float *gB, int \
+nrow, int ncol) {\n__shared__ float sA[BLOCKSIZE][BLOCKSIZE];\n__shared__ \
+float sB[BLOCKSIZE][BLOCKSIZE];\n\nint i,j,k;\nint offset;\nfloat a,b;\nfloat \
+sum_a, sum_b, sum_a2, sum_b2, sum_ab, corrcoef;\n\ni = blockldx.y*blockDim.y \
++ threadldx.y;\nj = blockldx.x*blockDim.x + threadldx.x;\n\nsum_a = sum_a2 = \
+sum_b = sum_b2 = sum_ab = 0;\n\nfor (offset=O; offset < ncol; offset += \
+blockDim.x)\n\tsA[threadIdx.y][threadIdx.x] = \
+gA[(blockIdx.y*blockDim.y+threadldx.y)*ncol+offset+threadldx.x];\n\n\t\
+sB[threadIdx.y][threadIdx.x] = \
+gB[(blockIdx.x*blockDim.x+threadldx.y)*ncol+offset+threadldx.x];\n\t\n\t\
+__syncthreads();\n\n\tfor (k=O; k < blockDim.x; k++) {\n\t\ta = \
+sA[threadIdx.y][k];\n\t\tb = sB[threadIdx.x][k];\n\t\tsum_a += a;\n\t\tsum_a2 \
++= a*a;\n\t\tsum_b += b;\n\t\tsum_b2 += b*b;\n\t\tsum_ab += a*b;\n\t}\n\t\
+__syncthreads();\n}\ncorrcoef = \
+(ncol*sum_ab-sUDl_a*sum_b)/sqrtf(ncol.*sum_a2-sum_a*sum_a)*(ncol*sum_b2-sum_b*\
+sum_b);\ngC[i*nrow+j] = correoef;\n}\n\>\""}], ";"}]}]], "Input",
+ CellChangeTimes->{{3.53772627601845*^9, 3.537726276399934*^9}, {
+  3.537726362618492*^9, 3.537726430179824*^9}, {3.5377264992891903`*^9, 
+  3.5377267439054413`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"cudaSq", " ", "=", " ", 
+    RowBox[{"CUDAFunctionLoad", "[", 
+     RowBox[{
+     "sqrtRootSumKernelCode", ",", "\"\<sqrtRootSum_kernel\>\"", ",", " ", 
+      "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"_Real", ",", "_", ",", "\"\<Output\>\""}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"_Real", ",", "_", ",", "\"\<Output\>\""}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"_Real", ",", "_", ",", "\"\<Output\>\""}], "}"}], ",", 
+        "_Real", ",", " ", "_Real", ",", " ", "_Integer", ",", " ", 
+        "_Integer"}], "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"16", ",", "16"}], "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"\"\<ShellOutputFunction\>\"", "\[Rule]", "Print"}]}], "]"}]}], 
+   "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.537726285964015*^9, 3.537726287073444*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"CUDAFunctionLoad", "::", "cmpf"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The kernel compilation failed. Consider setting the option \
+\\\"ShellOutputFunction\\\"->Print to display the compiler error message. \\!\
+\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:CUDALink/ref/CUDAFunctionLoad\\\", \
+ButtonNote -> \\\"CUDALink`CUDAFunctionLoad::cmpf\\\"]\\)\"\>"}]], "Message", \
+"MSG",
+ CellChangeTimes->{3.5377263220523043`*^9}],
+
+Cell[BoxData["\<\"/Users/george/Library/Mathematica/ApplicationData/CUDALink/\
+BuildFolder/d-69-91-152-19-4766/Working-d-69-91-152-19-4766-1929779552-1/\
+CUDAFunction-9334.cu(4): error: identifier \\\"width\\\" is \
+undefined\\n\\n/Users/george/Library/Mathematica/ApplicationData/CUDALink/\
+BuildFolder/d-69-91-152-19-4766/Working-d-69-91-152-19-4766-1929779552-1/\
+CUDAFunction-9334.cu(7): error: expected a \\\";\\\"\\n\\n2 errors detected \
+in the compilation of \
+\\\"/tmp/tmpxft_000013c1_00000000-4_CUDAFunction-9334.cpp4.ii\\\".\"\>"], \
+"Print",
+ CellChangeTimes->{3.537726322096833*^9}],
+
+Cell[BoxData[
+ RowBox[{"CUDAFunctionLoad", "[", 
+  RowBox[{"\<\"\\n__global__ void sqrtRootSum_kernel(Real_t *zMatrix, Real_t \
+*varX, Real_t *varY, Real_t conA, Real_t conB, mint lenX, mint lenY) \
+{\\n\\t\\n\\t int index = threadIdx.x + blockIdx.x * blockDim.x + \
+(threadIdx.y + blockIdx.y * blockDim.y)*width \\n\\t// int index = \
+threadIdx.x + blockIdx.x * blockDim.x;\\n\\t// int indY = threadIdx.y + \
+blockIdx.y * blockDim.y;\\n\\tif (index >= (lenX*lenY)) return;\\n\\t// if \
+((indX >= lenX)||(indY >= lenY)) return;\\n    zMatrix[index] = 9;\\n}\"\>", 
+   ",", "\<\"sqrtRootSum_kernel\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"_Real", ",", "_", ",", "\<\"Output\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"_Real", ",", "_", ",", "\<\"Output\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"_Real", ",", "_", ",", "\<\"Output\"\>"}], "}"}], ",", "_Real",
+      ",", "_Real", ",", "_Integer", ",", "_Integer"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"16", ",", "16"}], "}"}], ",", 
+   RowBox[{"\<\"ShellOutputFunction\"\>", "\[Rule]", "Print"}]}], 
+  "]"}]], "Output",
+ CellChangeTimes->{3.5377263221001463`*^9}]
+}, Open  ]]
+},
+WindowSize->{640, 697},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 6, \
+2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 74, 1, 27, "Input"],
+Cell[CellGroupData[{
+Cell[656, 25, 543, 14, 88, "Input"],
+Cell[1202, 41, 201, 5, 27, "Output"],
+Cell[1406, 48, 202, 5, 27, "Output"]
+}, Open  ]],
+Cell[1623, 56, 1371, 23, 658, "Input"],
+Cell[CellGroupData[{
+Cell[3019, 83, 978, 22, 118, "Input"],
+Cell[4000, 107, 550, 11, 58, "Message"],
+Cell[4553, 120, 595, 9, 156, "Print"],
+Cell[5151, 131, 1177, 23, 223, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

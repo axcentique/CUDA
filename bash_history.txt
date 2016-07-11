@@ -1,0 +1,500 @@
+kill -STOP 12882
+kill -STOP 12751
+kill -CONT 12751
+pidof
+/usr/bin/pidof
+cd /
+/usr/bin/pidof
+/usr/bin/
+cd /usr/bin/
+nano pidof
+sudo nano pidof
+pidof TextEdit
+sudo pidof TextEdit
+chmod a+x pidof
+sudo chmod a+x pidof
+sudo pidof TextEdit
+pidof TextEdit
+sudo nano pidof
+killall pidof Preview
+killall pidof Preview
+cd ~/Desktop/
+sh fsl_installer.sh
+ls
+ls
+exit
+cd ~/Desktop/
+sh fsl_installer.sh 
+pdof matlab
+pidof matlab
+kill -STOP pidof matlab
+top
+pidof MATLAV
+pidof MATLAB
+netstat -I en0
+uotime
+uptime
+pidof MATLAB
+pidof Finder
+cd /
+cd /Applications/MATLAB_2011b.app
+cd /
+cd /Applications/
+ls | grep MATLAB
+cd MATLAB_R2011b.app
+cd /bin/
+ls
+ls java.opt
+ls | grep  java.opt
+ls
+ls | grep mac
+cd /Applications/MATLAB_R2011b.app/bin/maci64 
+ls | grep java
+nano java.opts
+sudo nano java.opts
+cd /Users/george/Downloads/Aoi\ Tsukasa\ \(葵つかさ\) 
+chmod -R -x *
+cd (matlabroot)
+ulimit -n 512
+cd /Users/george/Downloads/Mac\ Terraria\ Minituff/Terraria/MacTerraria.app 
+MONO_IOMAP=all Contents/MacOS/MacTerrariaWrapper
+cd /Developer
+cd ~/Desktop/
+ls | grep .
+ls | grep .b
+ls -l | grep .b
+ls -l | grep .bash
+ls -l | grep bash
+lspci | grep -nn VGA
+ssh 128.95.48.167
+ping fusiform.ibic.washington.edu
+clear
+man ln
+uptime
+cd /Users/george/Desktop/IBIC\ Projects/Real-time\ fMRI/IOWA3/tools 
+make
+ping 10.0.1.4
+/Users/george/iowa/bin/cvio_cp ; exit;
+/Users/george/Desktop/iowa/bin/cvio_cp ; exit;
+telnet localhost 80
+telnet localhost 3000
+telnet 10.0.1.2 3000
+telnet 10.0.1.2 3000
+cd /Users/george/iowa/bin 
+cvio_cp :3000:10.0.1.4:test.cvio TEST.cvio
+cd /Users/george/iowa3 
+make
+clear
+cd /Users/george/Desktop/IBIC\ Projects/Real-time\ fMRI/IOWA3/tools/cvio 
+cvio_cp :3000:10.0.1.4:test.cvio TEST.cvio
+cvio_cp.o :3000:10.0.1.4:test.cvio TEST.cvio
+./cvio_cp.o :3000:10.0.1.4:test.cvio TEST.cvio
+make
+cd /Users/george/Desktop/IBIC\ Projects/Real-time\ fMRI/IOWA3/trunk 
+makefile
+make
+gcc sq_test.c -std=c99 -o cvio_cp.o
+cd /Users/george/Desktop/IBIC\ Projects/Real-time\ fMRI/IOWA3/tools/cvio 
+gcc sq_test.c -std=c99 -o cvio_cp.o
+gcc cvio_cp.c -std=c99 -o cvio_cp.o
+make
+cvio_cp.o :3000:10.0.1.4:test.cvio TEST.cvio
+cvio_cp.o :3000:10.0.1.4:test.cvio TEST.cvio
+cvio_cp :3000:10.0.1.4:test.cvio TEST.cvio
+cd /Users/george/Desktop/iowa/bin 
+cvio_cp :3000:10.0.1.4:test.cvio TEST.cvio
+./cvio_cp :3000:10.0.1.4:test.cvio TEST.cvio
+sudo wget http://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png -O ~/Desktop/matlab.png
+ssh george@fusiform.ibic.washington.edu
+ssh george@operculum.ibic.washington.edu
+ssh George@operculum.ibic.washington.edu
+macports
+macport
+ports
+port
+sudo port install ntfs-3g
+sudo port install ntfs-3g
+sudo port install glib
+sudo port uninstall ntfs-3g
+cd /Volumes/Вентиль-1/Software/mathworks_downloads/R2011b/archives 
+ls -l | grep MATLAb
+ls -l | grep MATLAB
+sudo su
+sudo port upgrade
+sudo port selfupgrade
+sudo port selfupdate
+sudo port upgrade outdated
+sudo port selftupdate
+sudo port selfupdate
+sudo port upgrade outdated
+sudo port install pkgconfig
+sudo port clean glib2
+sudo port install glib2
+ulimit -n 512
+cd /Users/george/Downloads/Mac\ Terraria\ Minituff/Terraria 
+MONO_IOMAP=all Contents/MacOS/MacTerrariaWrapper
+ls
+cd MacTerraria.app/
+MONO_IOMAP=all Contents/MacOS/MacTerrariaWrapper
+MONO_IOMAP=all Contents/MacOS/MacTerrariaWrapper
+MONO_IOMAP=all Contents/Masudo cOS/MacTerrariaWrapper
+sudo MONO_IOMAP=all Contents/MacOS/MacTerrariaWrapper
+/Users/george/Downloads/Terraria-Mac/RUN\ THIS\ 1st.command ; exit;
+/Users/george/Downloads/Terraria-Mac/RUN\ THIS\ 1st.command ; exit;
+ulimit -n 512
+cd /Applications/
+cd Terraria.app/
+MONO_IOMAP=all Contents/MacOS/MacTerrariaWrapper
+ulimit -n 512
+cd /Applications/MacTerraria.app 
+MONO_IOMAP=all Contents/MacOS/MacTerrariaWrapper
+ulimit -n 512
+cd /Applications/MacTerraria.app 
+MONO_IOMAP=all Contents/MacOS/MacTerrariaWrapper
+cd /Volumes/Вентиль 
+sudo su
+killall Dock
+ping 128.95.48.167
+eixt
+exit
+sudo port install fuse4x sshfs
+sudo port upgrade
+sudo port upgrade
+sudo ports selfupdate
+sudo port selfupdate
+sudo port upgrade outdated
+sudo port uninstall glib2
+sudo port remove glib2
+sudo port clear glib2
+sudo port clean glib2
+sudo port install glib2
+sudo port install pkgconfig
+port installed
+clear
+sudo port -fp uninstall --follow-dependents installed
+sudo rm -rf     /opt/local     /Applications/DarwinPorts     /Applications/MacPorts     /Library/LaunchDaemons/org.macports.*     /Library/Receipts/DarwinPorts*.pkg     /Library/Receipts/MacPorts*.pkg     /Library/StartupItems/DarwinPortsStartup     /Library/Tcl/darwinports1.0     /Library/Tcl/macports1.0     ~/.macports
+sudo rm -rf     /opt/local     /Applications/DarwinPorts     /Applications/MacPorts     /Library/LaunchDaemons/org.macports.*     /Library/Receipts/DarwinPorts*.pkg     /Library/Receipts/MacPorts*.pkg     /Library/StartupItems/DarwinPortsStartup     /Library/Tcl/darwinports1.0     /Library/Tcl/macports1.0     ~/.macports
+sudo port
+sudo port install fuse4x sshfs
+sudo port install p5.12-locale-gettext
+sudo port -fp uninstall --follow-dependents installed
+sudo rm -rf     /opt/local     /Applications/DarwinPorts     /Applications/MacPorts     /Library/LaunchDaemons/org.macports.*     /Library/Receipts/DarwinPorts*.pkg     /Library/Receipts/MacPorts*.pkg     /Library/StartupItems/DarwinPortsStartup     /Library/Tcl/darwinports1.0     /Library/Tcl/macports1.0     ~/.macports
+sudo port install fuse4x sshfs
+sudo lsof /Users/george/Desktop/IMG_0133.jpg 
+sudo lsof /Users/george/Desktop/IMG_0133.jpg 
+flirt
+fsl
+fsl
+$HOME
+~
+$PATH
+dscl
+dscl
+dscl . delete groups/MacPorts
+dscl . -list /groups GroupMembership | grep MacPorts
+dscl . -list /groups GroupMembership
+ dscl . -list /users/
+ dscl . -list /users
+ dscl . delete /users/macports
+sudo  dscl . delete /users/macports
+ dscl . -list /users
+cd /Volumes/Mac\ OS\ X\ Install\ ESD 
+ls -l
+cd /usr/
+ls
+cd /local
+cd local
+cd lib
+ls
+ls | grep libintl.8.0.2.dylib
+ls | grep libintl.8.0.2
+ls | grep libintl
+cd /Volumes/Mac\ OS\ X\ Install\ ESD 
+cd /usr/
+cd local
+cd lib
+ls | grep libintl.8
+sudo cp libintl.8.dylib /usr/local/lib
+sudo cp /Volumes/Mac\ OS\ X\ Install\ ESD\usr\local\lib\libintl.8.dylib /usr/local/lib/
+sudo cp /Volumes/Mac\ OS\ X\ Install\ ESD/usr/local/lib/libintl.8.dylib /usr/local/lib/
+cd /Volumes/Mac\ OS\ X\ Install\ ESD 
+cd usr
+cd local
+ls
+cd /local
+cd /Volumes/Mac\ OS\ X\ Install\ ESD 
+ls
+cd usr
+ls
+clear
+sudo su
+brew install fuse4x sshfs
+brew doctor
+sudo ln -s /usr/local/lib/libintl.8.0.2.dylib /usr/local/lib/libintl.8.dylib
+brew doctor
+sudo /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"
+brew doctor
+brew install ruby
+brew doctor
+ruby -v
+brew install libintl
+brew doctor
+brew doctor
+brew install gettext
+brew doctor
+brew install gettext-v
+brew install gettext -v
+brew install gettext
+nano .bashrc
+ls
+ls -l
+nano exit
+brew install rubygems
+a='Nya'
+a*2
+clear
+ruby
+ping 128.95.48.167
+ping 128.95.48.167
+ping 128.95.48.167
+fsl -desktop
+brew install fsl
+fsl
+nano .bash_profile
+nano .bash_
+nano .bash_profile
+fslview
+fsl
+sudo mdutil -i on /Volumes/Stash/
+exit
+sudo mdutil -i on /Volumes/Вентиль/
+killall Dock
+diskutil list
+fdisk -e /dev/rdisk2
+fdisk -e /dev/rdisk2
+fdisk -e /dev/rdisk2
+diskutil list
+fdisk -e /dev/disk2
+clear
+diskutil list
+diskutil list
+clear
+diskutil list
+fdisk -e /dev/disk2
+ssh george@128.95.48.237
+diskutil list
+diskutil list
+diskutil list
+clear
+diskutil list
+fdisk -e /dev/rdisk2
+diskutil list
+clear
+fdisk
+fdisk -e
+fdisk -e /dev/rdisk2
+sudo su
+cd ~/Desktop/
+cd ~/Desktop/osinstall/
+xar -x -v -f ~/Desktop/OSInstall.mpkg
+xar -x -v -f OSInstall.mpkg
+cd /tmp; xar -cvf /tmp/OSInstall.mpkg *
+ls
+ls
+wd
+wdir
+dir
+fsl
+fsl
+defaults write com.apple.dock expose-animation-duration -float 0.15
+killall Dock
+defaults write com.apple.dock expose-animation-duration -float 0.2
+killall Dock
+defaults write com.apple.dock expose-cluster-scale -float 1;killall Dock
+defaults write com.apple.dock expose-cluster-scale -float .6;killall Dock
+vi /usr/lib/fls/4.1/fsl_sub
+cd /usr/lib/fsl/4.1/
+cd /usr/lib/fsl/
+cd /usr/lib/
+ls
+ls | grep fsl
+cd ~/desktop
+ls
+cd ~
+ls
+ls -l
+clear
+run_first_all -i '/mnt/home/presnyak/DATA/rtFMRIprototypingData/Motor_Scans/FingerTapping/20110929_12 -o ~/Desktop/Feb\ 27/FingerTap
+clear
+run_first_all -i ~/Desktop/fMRI/rtFMRIprototypingData/Motor_Scans/FingerTapping/20110929_120158WIPImagerySENSEs501a1005.nii.gz -o ~/Desktop/Feb\ 27/FingerTapping
+clear
+run_first_all -i ~/Desktop/fMRI/rtFMRIprototypingData/Motor_Scans/FingerTapping/20110929_120158WIPImagerySENSEs501a1005.nii.gz -o ~/Desktop/Feb27/FingerTapping
+clear
+cd '/Applications/mricronmac'
+dcm2nii -a n -d n -e n -i n -p n -g y -o '/Users/george/Desktop/' '/Users/george/Desktop/…'
+melodic --help
+cd /Users/george/Desktop/fMRI/fMRI\ Toolboxes/spm8/src 
+make distclean
+make && make install
+make toolbox-distclean
+make toolbox && make toolbox-install
+make external-distclean
+make external && make external-install
+make distclean
+clear
+make && make install
+run_first_all -i /Users/george/Desktop/20110725_145656WIPB03mmISOCLEARs801a1008.nii  -o ~/Desktop/Feb27/FingerTapping
+man fast
+fsl
+fsl
+run_first_all -i /Users/george/Desktop/Mean\ Vs\ Subj/S1/20110725_145656MEMPRAGES1SENSEs901a1009.nii -o /Users/george/Desktop/Mean\ Vs\ Subj/S1'
+run_first_all -i /Users/george/Desktop/MeanVsSubj/S1/20110725_145656MEMPRAGES1SENSEs901a1009.nii -o /Users/george/Desktop/MeanVsSubj/S1 
+run_first_all -i /Users/george/Desktop/MeanVsSubj/S2/co20110921_150621MPRAGES2SENSEs901a1009.nii -o ~/Desktop/MeanVsSubj/S2/S2
+svn checkout http://fmri-cuda.googlecode.com/svn/trunk/ fmri-cuda-read-only
+sudo nano /etc/hosts
+telnet towel.blinkenlights.nl
+cd /Users/george/Documents/MATLAB 
+unzip -o spm8_updates_rxxxx.zip -d spm8
+unzip -o spm8_updates_r4667.zip -d spm8
+man cp
+(i386,$(HARDWARE))
+export PATH=$PATH:/Applications/MATLAB_R2011b.app/bin 
+CD /Users/george/Documents/MATLAB/spm8/src 
+make distclean
+make && make install
+make toolbox-distclean
+make toolbox && make toolbox-install
+make external-distclean
+make external && make external-install
+ls
+cd ~/Documents/MATLAB/spm8/src/
+ls
+clear
+make distclean
+make && make install
+sudo make && make install
+sudo su
+make toolbox && make toolbox-install
+make external-distclean
+make external && make external-install
+ssh caudate.ibic.washington.edu
+ssh presnyak@caudate.ibic.washington.edu
+man ln
+ssh presnyak@caudate.ibic.washington.edu
+fsl
+flirt
+fsl
+cd '/Applications/mricronmac'
+cd '/Applications/mricronmac'
+dcm2nii
+cd /Users/george/Desktop/DMdata/subject1/selfPaced 
+mv .ica selftPaced.ica
+cd /Users/george/Desktop/DMdata/subject2/selfPaced 
+mv .ica selftPaced.ica
+fsl
+fsl
+fsl
+fsl
+fsl
+flirt -in /Users/george/Desktop/DMdata/subject2/co20110921_150621MPRAGES2SENSEs901a1009_brain.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/DMdata/subject2/labeling/subject_2_T1_brain_mni -omat /Users/george/Desktop/DMdata/subject2/labeling/T12mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+flirt -in /Users/george/Desktop/DMdata/subject2/co20110921_150621MPRAGES2SENSEs901a1009_brain.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/DMdata/subject2/labeling/subject_2_T1_brain_mni -omat /Users/george/Desktop/DMdata/subject2/labeling/T12mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+fsl
+flirt -in /Users/george/Desktop/DMdata/subject1/20110725_145656MEMPRAGES1SENSEs901a1009_brain.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/DMdata/subject1/labeling/subject_1_T1_brain_mni -omat /Users/george/Desktop/DMdata/subject2/labeling/T12mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+flirt -in /Users/george/Desktop/DMdata/subject1/20110725_145656MEMPRAGES1SENSEs901a1009_brain.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/DMdata/subject1/labeling/subject_1_T1_brain_mni -omat /Users/george/Desktop/DMdata/subject2/labeling/T12mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+fsl
+flirt -in /Users/george/Desktop/DMdata/subject2/selfPaced/20110921_150621SelfPacefMRISENSEs501a1005.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/DMdata/subject2/labeling/subject_2_func_brain_mni -omat /Users/george/Desktop/DMdata/subject2/labeling/func2mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+flirt -in /Users/george/Desktop/DMdata/subject2/selfPacedo.ica/mean_func.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/DMdata/subject2/labeling/subject_2_func_brain_mni -omat /Users/george/Desktop/DMdata/subject2/labeling/func2mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+clear
+flirt -in /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/DMdata/subject2/labeling/subject_2_func_brain_mni -omat /Users/george/Desktop/DMdata/subject2/labeling/func2mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+flirt -in /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -ref /Users/george/Desktop/DMdata/subject2/co20110921_150621MPRAGES2SENSEs901a1009_brain.nii.gz -out /Users/george/Desktop/DMdata/subject2/labeling/subject_2_func_brain_T1 -omat /Users/george/Desktop/DMdata/subject2/labeling/func2T1.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+cd /Users/george/Desktop/DMdata/subject2/labeling/
+convert_xfm -omat func2mni.mat -concat T12mni.mat func2T1.mat
+convert_xfm -omat func2mni.mat -concat T12mni.mat NYAAAAAA.mat
+convert_xfm -omat NYAAA.mat -concat T12mni.mat func2T1.mat
+clear
+convert_xfm -omat mni2func.mat -inverse func2mni.mat
+flirt -in MNI_PCC_precuneus.nii.gz -ref /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -out MNI_PCC_precuneus_func.nii.gz -init mni2func.mat -applyxfm
+clear
+flirt -in /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/DMdata/subject2/labeling/subject_2_func_brain_mni -omat /Users/george/Desktop/DMdata/subject2/labeling/func2mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+convert_xfm -omat func2mni.mat -concat T12mni.mat func2T1.mat
+convert_xfm -omat mni2func.mat -inverse func2mni.mat
+flirt -in MNI_PCC_precuneus.nii.gz -ref /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -out MNI_PCC_precuneus_func.nii.gz -init mni2func.mat -applyxfm
+clear
+convert_xfm -omat func2mni.mat -concat T12mni.mat func2T1.mat
+convert_xfm -omat mni2func.mat -inverse func2mni.mat
+flirt -in MNI_PCC_precuneus.nii.gz -ref /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -out MNI_PCC_precuneus_func.nii.gz -init mni2func.mat -applyxfm
+convert_xfm -omat func2mni.mat -concat T12mni.mat func2T1.mat
+convert_xfm -omat mni2func.mat -inverse func2mni.mat
+flirt -in MNI_PCC_precuneus.nii.gz -ref /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -out MNI_PCC_precuneus_func.nii.gz -init mni2func.mat -applyxfm
+convert_xfm -omat func2mni.mat -concat T12mni.mat func2T1.mat
+convert_xfm -omat mni2func.mat -inverse func2mni.mat
+flirt -in MNI_PCC_precuneus.nii.gz -ref /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -out MNI_PCC_precuneus_func.nii.gz -init mni2func.mat -applyxfm
+flirt -in MNI_PCC_precuneus.nii.gz -ref /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -out MNI_PCC_precuneus_func.nii.gz -init mni2func.mat -applyxfm
+flirt -in MNI_PCC_precuneus.nii.gz -ref /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -out MNI_PCC_precuneus_func.nii.gz -init mni2func.mat -applyxfm
+clear
+fl
+fsl
+fsl
+cd /Users/george/Desktop/DMdata/subject2/labeling 
+flirt -in subject_2_func_brain_mni.nii.gz -ref /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -out nmi2funcTEST.nii.gz -init mni2func.mat -applyxfm
+flirt -in subject_2_func_brain_mni.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out nmi2funcTEST.nii.gz -init mni2func.mat -applyxfm
+clear
+flirt
+ckear
+flirt -in /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out func2mniTEST.nii.gz -init func2mni.mat -applyxfm
+clear
+flirt -in /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/DMdata/subject2/labeling/subject_2_func_brain_mni -omat /Users/george/Desktop/DMdata/subject2/labeling/func2mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+clear
+convert_xfm -omat func2mni.mat -concat func2T1.mat T12mni.mat
+convert_xfm -omat mni2func.mat -inverse func2mni.mat
+flirt -in /Users/george/Desktop/DMdata/subject2/20110921_150621MPRAGES2SENSEs901a1009_brain.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/DMdata/subject2/labeling/subject_2_T1_brain_mni -omat /Users/george/Desktop/DMdata/subject2/labeling/T12mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+flirt -in /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -ref /Users/george/Desktop/DMdata/subject2/20110921_150621MPRAGES2SENSEs901a1009_brain.nii.gz -out /Users/george/Desktop/DMdata/subject2/labeling/subject_2_func_brain_T1 -omat /Users/george/Desktop/DMdata/subject2/labeling/func2T1.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+convert_xfm -omat func2mni.mat -concat T12mni.mat func2T1.mat
+convert_xfm -omat mni2func.mat -inverse func2mni.mat
+flirt -in subject_2_func_brain_mni.nii.gz -ref /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -out nmi2funcTEST.nii.gz -init mni2func.mat -applyxfm
+clear
+flirt -in MNI_PCC_precuneus.nii.gz -ref /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -out MNI_PCC_precuneus_func.nii.gz -init mni2func.mat -applyxfm
+fsl
+screen
+for f in /var/folders/*/*/TemporaryItems/FlashTmp*; do   cp "$f" ~/Desktop/"$f".flv; done
+killall DashboardClient
+ls
+clear
+cd /Volumes/Вентиль/nya 
+ls
+rm _FAKKU__TSF_Monogatari_Vol.02__17C9134A_.mkv 
+rm to-love-ru-darkness-manga-chapter-17-017.jpg 
+ls
+cd /Volumes/Вентиль/
+ls
+rm iGeorge.sparsebundle/
+rm -rf iGeorge.sparsebundle/
+cd /Volumes/Time\ Machine\ Backups 
+ls
+rm -rf Backups.backupdb/
+rm -rf sudo Backups.backupdb/
+sudo rm -rf Backups.backupdb/
+sudo su
+sudo su
+cd /Volumes/Вентиль 
+ls
+rm -rf iGeorge.sparsebundle/
+sudo nano /etc/host
+sudo nano /etc/hosts
+sudo nano /etc/hosts
+flirt -in /Users/george/Desktop/tutorial/fmriblocks009.nii -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/tutorial/labeling/subject_func_brain_mni -omat /Users/george/Desktop/tutorial/labeling/func2mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+fsl
+fsl
+clear
+flirt -in /Users/george/Desktop/tutorial/T1s005_brain.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/tutorial/labeling/subject_T1_brain_mni -omat /Users/george/Desktop/tutorial/labeling/T12mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+cd /Users/george/Desktop/tutorial/labeling
+convert_xfm -omat func2mni.mat -concat T12mni.mat func2T1.mat
+convert_xfm -omat mni2func.mat -inverse func2mni.matflirt -in /Users/george/Desktop/tutorial/fmriblocks009.nii -ref /Users/george/Desktop/tutorial/T1s005_brain.nii.gz -out /Users/george/Desktop/tutorial/labeling/subject_func_brain_T1 -omat /Users/george/Desktop/tutorial/labeling/func2T1.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+clear
+flirt -in /Users/george/Desktop/tutorial/fmriblocks009.nii -ref /Users/george/Desktop/tutorial/T1s005_brain.nii.gz -out /Users/george/Desktop/tutorial/labeling/subject_func_brain_T1 -omat /Users/george/Desktop/tutorial/labeling/func2T1.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+clear
+cd /Users/george/Desktop/tutorial/labeling
+convert_xfm -omat func2mni.mat -concat T12mni.mat func2T1.mat
+convert_xfm -omat mni2func.mat -inverse func2mni.mat
+flirt -in MNI_PCC_precuneus.nii.gz -ref ../FSL.feat/mean_func.nii.gz -out MNI_PCC_precuneus_func.nii.gz -init mni2func.mat -applyxfm

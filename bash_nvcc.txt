@@ -1,0 +1,500 @@
+ls
+cd usr
+ls
+clear
+sudo su
+brew install fuse4x sshfs
+brew doctor
+sudo ln -s /usr/local/lib/libintl.8.0.2.dylib /usr/local/lib/libintl.8.dylib
+brew doctor
+sudo /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"
+brew doctor
+brew install ruby
+brew doctor
+ruby -v
+brew install libintl
+brew doctor
+brew doctor
+brew install gettext
+brew doctor
+brew install gettext-v
+brew install gettext -v
+brew install gettext
+nano .bashrc
+ls
+ls -l
+nano exit
+brew install rubygems
+a='Nya'
+a*2
+clear
+ruby
+ping 128.95.48.167
+ping 128.95.48.167
+ping 128.95.48.167
+fsl -desktop
+brew install fsl
+fsl
+nano .bash_profile
+nano .bash_
+nano .bash_profile
+fslview
+fsl
+sudo mdutil -i on /Volumes/Stash/
+exit
+sudo mdutil -i on /Volumes/Вентиль/
+killall Dock
+diskutil list
+fdisk -e /dev/rdisk2
+fdisk -e /dev/rdisk2
+fdisk -e /dev/rdisk2
+diskutil list
+fdisk -e /dev/disk2
+clear
+diskutil list
+diskutil list
+clear
+diskutil list
+fdisk -e /dev/disk2
+ssh george@128.95.48.237
+diskutil list
+diskutil list
+diskutil list
+clear
+diskutil list
+fdisk -e /dev/rdisk2
+diskutil list
+clear
+fdisk
+fdisk -e
+fdisk -e /dev/rdisk2
+sudo su
+cd ~/Desktop/
+cd ~/Desktop/osinstall/
+xar -x -v -f ~/Desktop/OSInstall.mpkg
+xar -x -v -f OSInstall.mpkg
+cd /tmp; xar -cvf /tmp/OSInstall.mpkg *
+ls
+ls
+wd
+wdir
+dir
+fsl
+fsl
+defaults write com.apple.dock expose-animation-duration -float 0.15
+killall Dock
+defaults write com.apple.dock expose-animation-duration -float 0.2
+killall Dock
+defaults write com.apple.dock expose-cluster-scale -float 1;killall Dock
+defaults write com.apple.dock expose-cluster-scale -float .6;killall Dock
+vi /usr/lib/fls/4.1/fsl_sub
+cd /usr/lib/fsl/4.1/
+cd /usr/lib/fsl/
+cd /usr/lib/
+ls
+ls | grep fsl
+cd ~/desktop
+ls
+cd ~
+ls
+ls -l
+clear
+run_first_all -i '/mnt/home/presnyak/DATA/rtFMRIprototypingData/Motor_Scans/FingerTapping/20110929_12 -o ~/Desktop/Feb\ 27/FingerTap
+clear
+run_first_all -i ~/Desktop/fMRI/rtFMRIprototypingData/Motor_Scans/FingerTapping/20110929_120158WIPImagerySENSEs501a1005.nii.gz -o ~/Desktop/Feb\ 27/FingerTapping
+clear
+run_first_all -i ~/Desktop/fMRI/rtFMRIprototypingData/Motor_Scans/FingerTapping/20110929_120158WIPImagerySENSEs501a1005.nii.gz -o ~/Desktop/Feb27/FingerTapping
+clear
+cd '/Applications/mricronmac'
+dcm2nii -a n -d n -e n -i n -p n -g y -o '/Users/george/Desktop/' '/Users/george/Desktop/…'
+melodic --help
+cd /Users/george/Desktop/fMRI/fMRI\ Toolboxes/spm8/src 
+make distclean
+make && make install
+make toolbox-distclean
+make toolbox && make toolbox-install
+make external-distclean
+make external && make external-install
+make distclean
+clear
+make && make install
+run_first_all -i /Users/george/Desktop/20110725_145656WIPB03mmISOCLEARs801a1008.nii  -o ~/Desktop/Feb27/FingerTapping
+man fast
+fsl
+fsl
+run_first_all -i /Users/george/Desktop/Mean\ Vs\ Subj/S1/20110725_145656MEMPRAGES1SENSEs901a1009.nii -o /Users/george/Desktop/Mean\ Vs\ Subj/S1'
+run_first_all -i /Users/george/Desktop/MeanVsSubj/S1/20110725_145656MEMPRAGES1SENSEs901a1009.nii -o /Users/george/Desktop/MeanVsSubj/S1 
+run_first_all -i /Users/george/Desktop/MeanVsSubj/S2/co20110921_150621MPRAGES2SENSEs901a1009.nii -o ~/Desktop/MeanVsSubj/S2/S2
+svn checkout http://fmri-cuda.googlecode.com/svn/trunk/ fmri-cuda-read-only
+sudo nano /etc/hosts
+telnet towel.blinkenlights.nl
+cd /Users/george/Documents/MATLAB 
+unzip -o spm8_updates_rxxxx.zip -d spm8
+unzip -o spm8_updates_r4667.zip -d spm8
+man cp
+(i386,$(HARDWARE))
+export PATH=$PATH:/Applications/MATLAB_R2011b.app/bin 
+CD /Users/george/Documents/MATLAB/spm8/src 
+make distclean
+make && make install
+make toolbox-distclean
+make toolbox && make toolbox-install
+make external-distclean
+make external && make external-install
+ls
+cd ~/Documents/MATLAB/spm8/src/
+ls
+clear
+make distclean
+make && make install
+sudo make && make install
+sudo su
+make toolbox && make toolbox-install
+make external-distclean
+make external && make external-install
+ssh caudate.ibic.washington.edu
+ssh presnyak@caudate.ibic.washington.edu
+man ln
+ssh presnyak@caudate.ibic.washington.edu
+fsl
+flirt
+fsl
+cd '/Applications/mricronmac'
+cd '/Applications/mricronmac'
+dcm2nii
+cd /Users/george/Desktop/DMdata/subject1/selfPaced 
+mv .ica selftPaced.ica
+cd /Users/george/Desktop/DMdata/subject2/selfPaced 
+mv .ica selftPaced.ica
+fsl
+fsl
+fsl
+fsl
+fsl
+flirt -in /Users/george/Desktop/DMdata/subject2/co20110921_150621MPRAGES2SENSEs901a1009_brain.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/DMdata/subject2/labeling/subject_2_T1_brain_mni -omat /Users/george/Desktop/DMdata/subject2/labeling/T12mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+flirt -in /Users/george/Desktop/DMdata/subject2/co20110921_150621MPRAGES2SENSEs901a1009_brain.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/DMdata/subject2/labeling/subject_2_T1_brain_mni -omat /Users/george/Desktop/DMdata/subject2/labeling/T12mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+fsl
+flirt -in /Users/george/Desktop/DMdata/subject1/20110725_145656MEMPRAGES1SENSEs901a1009_brain.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/DMdata/subject1/labeling/subject_1_T1_brain_mni -omat /Users/george/Desktop/DMdata/subject2/labeling/T12mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+flirt -in /Users/george/Desktop/DMdata/subject1/20110725_145656MEMPRAGES1SENSEs901a1009_brain.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/DMdata/subject1/labeling/subject_1_T1_brain_mni -omat /Users/george/Desktop/DMdata/subject2/labeling/T12mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+fsl
+flirt -in /Users/george/Desktop/DMdata/subject2/selfPaced/20110921_150621SelfPacefMRISENSEs501a1005.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/DMdata/subject2/labeling/subject_2_func_brain_mni -omat /Users/george/Desktop/DMdata/subject2/labeling/func2mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+flirt -in /Users/george/Desktop/DMdata/subject2/selfPacedo.ica/mean_func.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/DMdata/subject2/labeling/subject_2_func_brain_mni -omat /Users/george/Desktop/DMdata/subject2/labeling/func2mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+clear
+flirt -in /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/DMdata/subject2/labeling/subject_2_func_brain_mni -omat /Users/george/Desktop/DMdata/subject2/labeling/func2mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+flirt -in /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -ref /Users/george/Desktop/DMdata/subject2/co20110921_150621MPRAGES2SENSEs901a1009_brain.nii.gz -out /Users/george/Desktop/DMdata/subject2/labeling/subject_2_func_brain_T1 -omat /Users/george/Desktop/DMdata/subject2/labeling/func2T1.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+cd /Users/george/Desktop/DMdata/subject2/labeling/
+convert_xfm -omat func2mni.mat -concat T12mni.mat func2T1.mat
+convert_xfm -omat func2mni.mat -concat T12mni.mat NYAAAAAA.mat
+convert_xfm -omat NYAAA.mat -concat T12mni.mat func2T1.mat
+clear
+convert_xfm -omat mni2func.mat -inverse func2mni.mat
+flirt -in MNI_PCC_precuneus.nii.gz -ref /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -out MNI_PCC_precuneus_func.nii.gz -init mni2func.mat -applyxfm
+clear
+flirt -in /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/DMdata/subject2/labeling/subject_2_func_brain_mni -omat /Users/george/Desktop/DMdata/subject2/labeling/func2mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+convert_xfm -omat func2mni.mat -concat T12mni.mat func2T1.mat
+convert_xfm -omat mni2func.mat -inverse func2mni.mat
+flirt -in MNI_PCC_precuneus.nii.gz -ref /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -out MNI_PCC_precuneus_func.nii.gz -init mni2func.mat -applyxfm
+clear
+convert_xfm -omat func2mni.mat -concat T12mni.mat func2T1.mat
+convert_xfm -omat mni2func.mat -inverse func2mni.mat
+flirt -in MNI_PCC_precuneus.nii.gz -ref /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -out MNI_PCC_precuneus_func.nii.gz -init mni2func.mat -applyxfm
+convert_xfm -omat func2mni.mat -concat T12mni.mat func2T1.mat
+convert_xfm -omat mni2func.mat -inverse func2mni.mat
+flirt -in MNI_PCC_precuneus.nii.gz -ref /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -out MNI_PCC_precuneus_func.nii.gz -init mni2func.mat -applyxfm
+convert_xfm -omat func2mni.mat -concat T12mni.mat func2T1.mat
+convert_xfm -omat mni2func.mat -inverse func2mni.mat
+flirt -in MNI_PCC_precuneus.nii.gz -ref /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -out MNI_PCC_precuneus_func.nii.gz -init mni2func.mat -applyxfm
+flirt -in MNI_PCC_precuneus.nii.gz -ref /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -out MNI_PCC_precuneus_func.nii.gz -init mni2func.mat -applyxfm
+flirt -in MNI_PCC_precuneus.nii.gz -ref /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -out MNI_PCC_precuneus_func.nii.gz -init mni2func.mat -applyxfm
+clear
+fl
+fsl
+fsl
+cd /Users/george/Desktop/DMdata/subject2/labeling 
+flirt -in subject_2_func_brain_mni.nii.gz -ref /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -out nmi2funcTEST.nii.gz -init mni2func.mat -applyxfm
+flirt -in subject_2_func_brain_mni.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out nmi2funcTEST.nii.gz -init mni2func.mat -applyxfm
+clear
+flirt
+ckear
+flirt -in /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out func2mniTEST.nii.gz -init func2mni.mat -applyxfm
+clear
+flirt -in /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/DMdata/subject2/labeling/subject_2_func_brain_mni -omat /Users/george/Desktop/DMdata/subject2/labeling/func2mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+clear
+convert_xfm -omat func2mni.mat -concat func2T1.mat T12mni.mat
+convert_xfm -omat mni2func.mat -inverse func2mni.mat
+flirt -in /Users/george/Desktop/DMdata/subject2/20110921_150621MPRAGES2SENSEs901a1009_brain.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/DMdata/subject2/labeling/subject_2_T1_brain_mni -omat /Users/george/Desktop/DMdata/subject2/labeling/T12mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+flirt -in /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -ref /Users/george/Desktop/DMdata/subject2/20110921_150621MPRAGES2SENSEs901a1009_brain.nii.gz -out /Users/george/Desktop/DMdata/subject2/labeling/subject_2_func_brain_T1 -omat /Users/george/Desktop/DMdata/subject2/labeling/func2T1.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+convert_xfm -omat func2mni.mat -concat T12mni.mat func2T1.mat
+convert_xfm -omat mni2func.mat -inverse func2mni.mat
+flirt -in subject_2_func_brain_mni.nii.gz -ref /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -out nmi2funcTEST.nii.gz -init mni2func.mat -applyxfm
+clear
+flirt -in MNI_PCC_precuneus.nii.gz -ref /Users/george/Desktop/DMdata/subject2/selfPaced.ica/mean_func.nii.gz -out MNI_PCC_precuneus_func.nii.gz -init mni2func.mat -applyxfm
+fsl
+screen
+for f in /var/folders/*/*/TemporaryItems/FlashTmp*; do   cp "$f" ~/Desktop/"$f".flv; done
+killall DashboardClient
+ls
+clear
+cd /Volumes/Вентиль/nya 
+ls
+rm _FAKKU__TSF_Monogatari_Vol.02__17C9134A_.mkv 
+rm to-love-ru-darkness-manga-chapter-17-017.jpg 
+ls
+cd /Volumes/Вентиль/
+ls
+rm iGeorge.sparsebundle/
+rm -rf iGeorge.sparsebundle/
+cd /Volumes/Time\ Machine\ Backups 
+ls
+rm -rf Backups.backupdb/
+rm -rf sudo Backups.backupdb/
+sudo rm -rf Backups.backupdb/
+sudo su
+sudo su
+cd /Volumes/Вентиль 
+ls
+rm -rf iGeorge.sparsebundle/
+sudo nano /etc/host
+sudo nano /etc/hosts
+sudo nano /etc/hosts
+flirt -in /Users/george/Desktop/tutorial/fmriblocks009.nii -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/tutorial/labeling/subject_func_brain_mni -omat /Users/george/Desktop/tutorial/labeling/func2mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+fsl
+fsl
+clear
+flirt -in /Users/george/Desktop/tutorial/T1s005_brain.nii.gz -ref /Users/george/Documents/MATLAB/spm8/templates/T1.nii -out /Users/george/Desktop/tutorial/labeling/subject_T1_brain_mni -omat /Users/george/Desktop/tutorial/labeling/T12mni.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+cd /Users/george/Desktop/tutorial/labeling
+convert_xfm -omat func2mni.mat -concat T12mni.mat func2T1.mat
+convert_xfm -omat mni2func.mat -inverse func2mni.matflirt -in /Users/george/Desktop/tutorial/fmriblocks009.nii -ref /Users/george/Desktop/tutorial/T1s005_brain.nii.gz -out /Users/george/Desktop/tutorial/labeling/subject_func_brain_T1 -omat /Users/george/Desktop/tutorial/labeling/func2T1.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+clear
+flirt -in /Users/george/Desktop/tutorial/fmriblocks009.nii -ref /Users/george/Desktop/tutorial/T1s005_brain.nii.gz -out /Users/george/Desktop/tutorial/labeling/subject_func_brain_T1 -omat /Users/george/Desktop/tutorial/labeling/func2T1.mat -searchrx -180 180 -searchry -180 180 -searchrz -180 180
+clear
+cd /Users/george/Desktop/tutorial/labeling
+convert_xfm -omat func2mni.mat -concat T12mni.mat func2T1.mat
+convert_xfm -omat mni2func.mat -inverse func2mni.mat
+flirt -in MNI_PCC_precuneus.nii.gz -ref ../FSL.feat/mean_func.nii.gz -out MNI_PCC_precuneus_func.nii.gz -init mni2func.mat -applyxfm
+cp .bash_history ~/Desktop/bash_history.txt
+cd /Users/george/fmri-cuda-read-only/Code/cuda 
+gcc main.cpp -std=c99 -o corrcoefGPU.o
+gcc -I/Library/Frameworks/CUDA.framework/Versions/A/Headers/  main.cpp -o corrcoefGPU.o
+gcc -I/Library/Frameworks/CUDA.framework/Versions/A/Headers/ -I/Developer/GPU\ Computing/CUDALibraries/common/inc/  main.cpp -o corrcoefGPU.o
+clear
+gcc main.cpp -std=c99 -o corrcoefGPU.o
+gcc -I/Library/Frameworks/CUDA.framework/Versions/A/Headers/ -I/Developer/GPU\ Computing/CUDALibraries/common/inc/  main.cpp -o corrcoefGPU.o
+clear
+nano .profile
+la -a
+ls -a
+clear
+gcc main.cpp -o corrcoefGPU.o
+ls -a
+cd ~/
+ls -a
+nano .profile
+nano .bash_profile
+nano .bash_profile
+bandwidthTest
+cd /Developer/GPU Computing/C/bin/darwin/release
+cd /Developer/GPU\ Computing/C/bin/darwin/release
+bandwidthTest
+deviceQuery
+ls -a
+./deviceQuery
+./bandwidthTest
+clear
+cd /Users/george/fmri-cuda-read-only/Code/cuda 
+gcc main.cpp -o corrcoefGPU.o
+$PATH
+export PATH=/usr/local/cuda/include:$PATH
+gcc main.cpp -o corrcoefGPU.o
+$PATH
+export PATH=/Library/Frameworks/CUDA.framework/Versions/A/Headers:$PATH
+gcc main.cpp -o corrcoefGPU.o
+gcc main.cpp -o corrcoefGPU.o
+gcc main.cpp -o corrcoefGPU.o
+cd ~
+nano .bash_profile
+nano .bash_profile
+nano .bash_profile
+nano .bash_profile
+ls
+nano .bash_profile
+nano .bash_profile
+cd /Users/george/fmri-cuda-read-only/Code/cuda 
+gcc main.cpp -o corrcoefGPU.o
+cd /Users/george/fmri-cuda-read-only/Code/cuda 
+gcc main.cpp -o corrcoefGPU.o
+cd ~
+nano .bash_profile
+cd /Users/george/fmri-cuda-read-only/Code/cuda 
+gcc main.cpp -o corrcoefGPU.o
+sudo gcc main.cpp -o corrcoefGPU.o
+cd ~
+nano .bash_profile
+nano .bash_profile
+nvcc -o helloCuda helloCuda.cuclear
+clear
+cd /Users/george/fmri-cuda-read-only/Code/cuda 
+nvcc -o helloCuda helloCuda.cuclear
+sudo gcc main.cpp -o corrcoefGPU.o
+sudo gcc -I/usr/local/cuda/include main.cpp -o corrcoefGPU.o
+cd /Users/george/fmri-cuda-read-only/Code/cuda 
+sudo gcc -I/usr/local/cuda/include main.cpp -o corrcoefGPU.o
+sudo gcc -I/usr/local/cuda/include main.cpp -o corrcoefGPU.o
+cd /Developer/GPU\ Computing/CUDALibraries/common 
+make
+ls
+make
+cd ~
+ls -a
+nano .bash_profile
+nano .bash_profile
+exit
+cd '/Developer/GPU Computing/C/bin/darwin/release'
+./deviceQuery
+ls
+ls
+ls
+kextstat | grep -i cuda
+nvcc -V
+cd '/Developer/GPU Computing/C'
+make
+nano .bash_profile
+cd '/Developer/GPU Computing/C/bin/darwin/release'
+ls
+cd '/Developer/GPU Computing/C'
+make
+ls
+make
+clear
+cd /Developer/GPU\ Computing/C/common 
+make
+cd /Developer/GPU\ Computing 
+make
+make
+fslview
+fsl
+fsl
+cleare
+clear
+fsl
+cd ~
+nano .bash_profile
+cu
+clear
+nvcc -I/usr/local/cuda/include -L/usr/local/cuda/lib -lcutil -lglut -o corrcoefGPU corrcoefGPU.cu
+nvcc -I/usr/local/cuda/include -L/usr/local/cuda/lib -lcutil -lglut -o corrcoefGPU corrcoefGPU.cu
+nvcc -I/Developer/GPU Computing/C/common/inc -L/usr/local/cuda/lib -lcutil -lglut -o corrcoefGPU corrcoefGPU.cu
+nvcc -I/Developer/GPU\ Computing/C/common/inc -L/usr/local/cuda/lib -lcutil -lglut -o corrcoefGPU corrcoefGPU.cu
+/Users/george/Desktop/CUDA/helloCuda ; exit;
+nano .bash_profile
+nano .bash_profile
+cd /Users/george/fmri-cuda-read-only/Code/cuda 
+nvcc -I/Developer/GPU\ Computing/C/common/inc -L/usr/local/cuda/lib -lcutil -lglut -o corrcoefGPU corrcoefGPU.cu
+gcc main.cpp -o maincuda
+clear
+nvcc -I/Developer/GPU\ Computing/C/common/inc -L/usr/local/cuda/lib -lcutil -lglut -o corrcoefGPU corrcoefGPU.cu
+nvcc  corrcoefGPU.cu
+gcc -I/Developer/GPU\ Computing/C/common/inc -L/usr/local/cuda/lib -lcutil -lglut -o corrcoefGPU corrcoefGPU.cu
+clear
+nvcc -I/Developer/GPU\ Computing/C/common/inc -L/usr/local/cuda/lib -lcutil -lglut -o corrcoefGPU corrcoefGPU.cu
+cd /Users/george/fmri-cuda-read-only/Code/cuda/obj/x86_64/release 
+./main.cpp.o
+corrcoefGPU.cu.o
+./corrcoefGPU.cu.o
+sudo ./corrcoefGPU.cu.o
+sudo ./corrcoefGPU.cu.o
+ls
+gcc --help
+cd /Users/george/fmri-cuda-read-only/Code/cpp/BinToTable/Release 
+./Corrcoef.obj
+sudo ./Corrcoef.obj
+chmod +x *
+./Corrcoef.obj
+cd /Developer/GPU\ Computing/C/bin/darwin/release/
+ls
+./deviceQuery
+cd /Users/george/fmri-cuda-read-only/Code/cuda 
+nvcc -I/Developer/GPU\ Computing/C/common/inc -L/usr/local/cuda/lib -lcutil -lglut -o corrcoefGPU corrcoefGPU.cu
+clear
+nvcc -I/Developer/GPU\ Computing/C/common/inc -L/Developer/GPU\ Computing/C/lib  -lcutil -lglut -o corrcoefGPU corrcoefGPU.cu
+make x86_64=1
+nvcc -I/Developer/GPU\ Computing/C/common/inc -L/Developer/GPU\ Computing/C/lib  -libcutil_x86_64 -lglut -o corrcoefGPU corrcoefGPU.cu
+nvcc -I/Developer/GPU\ Computing/C/common/inc -L/Developer/GPU\ Computing/C/lib  -lcutil_x86_64 -lglut -o corrcoefGPU corrcoefGPU.cu
+nvcc -I/Developer/GPU\ Computing/C/common/inc -L/Developer/GPU\ Computing/C/lib  -lcutil_x86_64  -o corrcoefGPU corrcoefGPU.cu
+clear
+nvcc -I/Developer/GPU\ Computing/C/common/inc -L/Developer/GPU\ Computing/C/lib  -lcutil_x86_64  -o corrcoefGPU corrcoefGPU.cu
+make
+ls
+ls
+clear
+make
+clear
+make
+make
+ls
+clear
+make
+make
+make
+clear
+ls
+make
+clear
+make
+CFLAGS="-c" make
+CFLAGS="-c" make
+make
+clear
+make
+clear
+make
+cudaGetDeviceCount
+cd /Users/george/fmri-cuda-read-only/Code/cuda/obj/x86_64/release 
+./main.cpp.o
+sudo ./main.cpp.o
+ingen
+ls -l
+chmod +x *
+ls -l
+clear
+./main.cpp.o
+./corrcoefGPU.cu.o
+./corrcoefGPU.cu.o
+./main.cpp.o
+./main.cpp.o
+./main.cpp.o
+./main.cpp.o
+./corrcoefGPU.cu.o
+./main.cpp.o
+file corrcoefGPU.cu.o
+file main.cpp.o 
+clear
+./corrcoefGPU.cu.o
+/Developer/GPU\ Computing/C/bin/darwin/release/corrcoefGPU ; exit;
+cd /Users/george/fmri-cuda-read-only/Code/cuda 
+make
+sudo make
+clear
+sudo make
+cd /Developer/GPU\ Computing/C/bin/darwin/release 
+./corrcoefGPU
+./corrcoefGPU
+corrcoefGPU
+cd ~
+nano .bash_profile
+corrcoefGPU
+cd /Users/george/Desktop/CUDA 
+make
+make
+make
+clear
+make
+clear
+make
+nvcc cudaMemTest cudaMemTest.cu
+nvcc cudaMemTest.cu
+clear
+make
+cd /Developer/GPU\ Computing/C/bin/darwin/release/
+./cudaMalloc

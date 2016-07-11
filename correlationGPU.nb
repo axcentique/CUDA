@@ -1,0 +1,210 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      7805,        201]
+NotebookOptionsPosition[      7021,        170]
+NotebookOutlinePosition[      7376,        186]
+CellTagsIndexPosition[      7333,        183]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<CUDALink`\>\"", "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "code", " ", "=", " ", 
+   "\"\<\n__global__ void corrcoefGPU_kernel(Real_t *arrU, Real_t *arrV, mint \
+size, mint length) {\n\tdouble *dev_vin, **dev_vout, *dev_meanArray;\n\tint \
+status=1;\n\n\n\n\tint index = threadIdx.x + blockIdx.x * blockDim.x;\n\tif \
+(index >= length) return;\n    arrU[index] = size * arrU[index] + size * \
+arrV[index];\n// *conA = 1;\n}\>\""}], ";"}]], "Input",
+ CellChangeTimes->{
+  3.5402787498262997`*^9, {3.540278805098309*^9, 3.540278855202352*^9}, {
+   3.540278902358169*^9, 3.540278904560647*^9}, {3.540278961861829*^9, 
+   3.540279162635404*^9}, {3.5402792353481207`*^9, 3.540279248132382*^9}, {
+   3.540303699153146*^9, 3.540303713814781*^9}, {3.5403037500223217`*^9, 
+   3.5403037659462843`*^9}, {3.540303966398403*^9, 3.54030396848707*^9}, {
+   3.540304152153554*^9, 3.5403041626154737`*^9}, {3.5403042104097357`*^9, 
+   3.5403042817093782`*^9}, {3.540304390488721*^9, 3.540304393653097*^9}, {
+   3.540304432152437*^9, 3.540304437188505*^9}, {3.540304474394907*^9, 
+   3.540304520796014*^9}, {3.540304621384955*^9, 3.540304650282833*^9}, {
+   3.5403047963900337`*^9, 3.54030479991124*^9}, {3.540305369540154*^9, 
+   3.5403054167421827`*^9}, {3.540305531842198*^9, 3.540305533938963*^9}, {
+   3.5403056326819153`*^9, 3.5403056445110817`*^9}, {3.5403056927359858`*^9, 
+   3.540305747675747*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.540305022685032*^9, 3.54030502978843*^9}, 
+   3.540305345066141*^9},
+ EmphasizeSyntaxErrors->True],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"corCoef", "=", 
+  RowBox[{"CUDAFunctionLoad", "[", 
+   RowBox[{"code", ",", "\"\<corrcoefGPU_kernel\>\"", ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"_Real", ",", "_", ",", "\"\<Output\>\""}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"_Real", ",", "_", ",", "\"\<Input\>\""}], "}"}], ",", 
+      "_Integer", ",", "_Integer"}], "}"}], ",", "128", ",", 
+    RowBox[{"\"\<ShellCommandFunction\>\"", "\[Rule]", "Print"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.540278688819763*^9, 3.540278692448638*^9}, {
+   3.540278879628563*^9, 3.540278879982039*^9}, {3.540279269993791*^9, 
+   3.540279284648333*^9}, {3.540303973942257*^9, 3.540304001486285*^9}, 
+   3.540304302147893*^9}],
+
+Cell[BoxData["\<\"\\n\\n\\\"/Users/george/Library/Mathematica/Paclets/\
+Repository/CUDAResources-OSX-8.0.0.8/CUDAToolkit/bin/nvcc\\\" -cubin -m64 \
+--compiler-bindir \\\"/usr/bin\\\" -arch=sm_11 -DUSING_CUDA_FUNCTION=1 \
+-Dmint=int -DReal_t=float -o \
+\\\"/Users/george/Library/Mathematica/ApplicationData/CUDALink/BuildFolder/\
+iGeorge-948/Working-d-69-91-184-46-948-2086611296-21/CUDAFunction-9679.cubin\\\
+\" \\\"/Users/george/Library/Mathematica/ApplicationData/CUDALink/BuildFolder/\
+iGeorge-948/Working-d-69-91-184-46-948-2086611296-21/CUDAFunction-9679.cu\\\" \
+2>&1\\n\\n\"\>"], "Print",
+ CellChangeTimes->{
+  3.5403054193727703`*^9, 3.540305536304392*^9, {3.540305637658956*^9, 
+   3.540305647061005*^9}, {3.540305707182028*^9, 3.540305749669463*^9}}],
+
+Cell[BoxData[
+ RowBox[{"CUDAFunction", "[", 
+  RowBox[{"\<\"<>\"\>", ",", "\<\"corrcoefGPU_kernel\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"_Real", ",", "_", ",", "\<\"Output\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"_Real", ",", "_", ",", "\<\"Input\"\>"}], "}"}], ",", 
+     "_Integer", ",", "_Integer"}], "}"}]}], "]"}]], "Output",
+ CellChangeTimes->{
+  3.540278357698311*^9, 3.540278693274428*^9, 3.540278882208848*^9, 
+   3.540279256148059*^9, 3.540279291705986*^9, {3.5403036850123587`*^9, 
+   3.54030371886931*^9}, 3.540303769344202*^9, 3.54030385406003*^9, 
+   3.540303898738165*^9, {3.540303977571863*^9, 3.5403040034574757`*^9}, 
+   3.540304164145274*^9, 3.540304309658247*^9, 3.540304397364893*^9, {
+   3.5403044341222677`*^9, 3.5403044387626343`*^9}, 3.540304482757962*^9, 
+   3.5403045237461452`*^9, {3.540304626801544*^9, 3.5403046524250402`*^9}, 
+   3.540304802376453*^9, 3.540305034416911*^9, {3.540305378673038*^9, 
+   3.540305419377269*^9}, 3.540305536307859*^9, {3.540305637662675*^9, 
+   3.540305647064507*^9}, {3.540305707185709*^9, 3.5403057496737337`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"listSize", " ", "=", " ", "10"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"arry1", "=", " ", 
+  RowBox[{"ConstantArray", "[", 
+   RowBox[{".5", ",", " ", 
+    RowBox[{"{", "listSize", "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"arry2", "=", " ", 
+  RowBox[{"ConstantArray", "[", 
+   RowBox[{".8", ",", " ", 
+    RowBox[{"{", "listSize", "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"a", "=", "2"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.540278408280455*^9, 3.540278443522129*^9}, {
+  3.540278559053156*^9, 3.540278559668627*^9}, {3.540278616451339*^9, 
+  3.54027863057052*^9}, {3.540304319513864*^9, 3.540304348364551*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0.5`", ",", "0.5`", ",", "0.5`", ",", "0.5`", ",", "0.5`", ",", "0.5`", 
+   ",", "0.5`", ",", "0.5`", ",", "0.5`", ",", "0.5`"}], "}"}]], "Output",
+ CellChangeTimes->{{3.540304322762197*^9, 3.5403043488530397`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0.8`", ",", "0.8`", ",", "0.8`", ",", "0.8`", ",", "0.8`", ",", "0.8`", 
+   ",", "0.8`", ",", "0.8`", ",", "0.8`", ",", "0.8`"}], "}"}]], "Output",
+ CellChangeTimes->{{3.540304322762197*^9, 3.5403043488567047`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"res", "=", 
+  RowBox[{"corCoef", "[", 
+   RowBox[{"arry1", ",", " ", "arry2", ",", " ", "a", ",", " ", "listSize"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.540278428036852*^9, 3.540278432066036*^9}, {
+  3.5402789467481833`*^9, 3.5402789470951853`*^9}, {3.540304332463386*^9, 
+  3.540304356187777*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+   "2.5999999046325684`", ",", "2.5999999046325684`", ",", 
+    "2.5999999046325684`", ",", "2.5999999046325684`", ",", 
+    "2.5999999046325684`", ",", "2.5999999046325684`", ",", 
+    "2.5999999046325684`", ",", "2.5999999046325684`", ",", 
+    "2.5999999046325684`", ",", "2.5999999046325684`"}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.540304342782241*^9, 3.5403043568560677`*^9}, 
+   3.5403043983178053`*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.5403038851121597`*^9, 3.540303885130804*^9}}]
+},
+WindowSize->{1062, 697},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 6, \
+2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 74, 1, 27, "Input"],
+Cell[634, 23, 1370, 22, 193, "Input"],
+Cell[2007, 47, 147, 3, 27, "Input"],
+Cell[CellGroupData[{
+Cell[2179, 54, 741, 16, 43, "Input"],
+Cell[2923, 72, 760, 11, 156, "Print"],
+Cell[3686, 85, 1126, 20, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4849, 110, 686, 15, 73, "Input"],
+Cell[5538, 127, 258, 5, 27, "Output"],
+Cell[5799, 134, 258, 5, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6094, 144, 331, 7, 27, "Input"],
+Cell[6428, 153, 480, 11, 27, "Output"]
+}, Open  ]],
+Cell[6923, 167, 94, 1, 27, InheritFromParent]
+}
+]
+*)
+
+(* End of internal cache information *)

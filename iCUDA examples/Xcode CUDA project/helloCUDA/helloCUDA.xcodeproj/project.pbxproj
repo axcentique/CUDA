@@ -1,0 +1,172 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		5E5A1683150A91BE00572C16 /* CUDA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CUDA.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/Library/Frameworks/CUDA.framework; sourceTree = DEVELOPER_DIR; };
+		5E5A1685150A930800572C16 /* Makefile */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; path = Makefile; sourceTree = "<group>"; };
+		5E5A168B150A942F00572C16 /* helloCuda.cu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = helloCuda.cu; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		5E5A166A150A914C00572C16 = {
+			isa = PBXGroup;
+			children = (
+				5E5A1683150A91BE00572C16 /* CUDA.framework */,
+				5E5A167B150A919000572C16 /* helloCUDA */,
+				5E5A1679150A919000572C16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E5A1679150A919000572C16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E5A167B150A919000572C16 /* helloCUDA */ = {
+			isa = PBXGroup;
+			children = (
+				5E5A168B150A942F00572C16 /* helloCuda.cu */,
+				5E5A1685150A930800572C16 /* Makefile */,
+			);
+			path = helloCUDA;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		5E5A1687150A937400572C16 /* helloCUDA */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 5E5A1688150A937400572C16 /* Build configuration list for PBXLegacyTarget "helloCUDA" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = /Users/george/Desktop/CUDA/helloCUDA/helloCUDA;
+			dependencies = (
+			);
+			name = helloCUDA;
+			passBuildSettingsInEnvironment = 1;
+			productName = helloCUDA;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		5E5A166C150A914C00572C16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 5E5A166F150A914C00572C16 /* Build configuration list for PBXProject "helloCUDA" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5E5A166A150A914C00572C16;
+			productRefGroup = 5E5A1679150A919000572C16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E5A1687150A937400572C16 /* helloCUDA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		5E5A1671150A914C00572C16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		5E5A1672150A914C00572C16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		5E5A1689150A937400572C16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5E5A168A150A937400572C16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E5A166F150A914C00572C16 /* Build configuration list for PBXProject "helloCUDA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E5A1671150A914C00572C16 /* Debug */,
+				5E5A1672150A914C00572C16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E5A1688150A937400572C16 /* Build configuration list for PBXLegacyTarget "helloCUDA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E5A1689150A937400572C16 /* Debug */,
+				5E5A168A150A937400572C16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E5A166C150A914C00572C16 /* Project object */;
+}

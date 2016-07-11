@@ -1,0 +1,21 @@
+## places compiled binary in current directory
+# BINDIR = ./
+
+## What to name the compiled executable
+EXECUTABLE := helloCUDA
+## In OS X, the executables are saved in "/Developer/GPU Computing/C/bin/darwin/release"
+## After compilation completes you can just browse to the folder and double click the file
+## OR in Terminal (code in "quotes"): "cd /Developer/GPU\ Computing/C/bin/darwin/release", Enter, "./helloCuda", Enter.
+
+## Set flags for the compiler, see nvcc --help and gcc --help
+# CFLAGS = -c
+
+## Specify C++ files to compile
+# CCFILES := main.cpp
+
+# Specify CUDA files to compile
+CUFILES := helloCuda.cu
+
+# Specifies path to CUDA common libraries
+ROOTDIR := /Developer/GPU\ Computing/C/common
+include $(ROOTDIR)/../common/common.mk
